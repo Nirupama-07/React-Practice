@@ -56,7 +56,7 @@ The goal of this repository is to document my React learning journey by completi
 
 - ✅ Chapter 01 completed
 - ✅ Chapter 02 completed
-- ✅ Chapter 02 completed
+- ✅ Chapter 03 completed
 - 🚀 More chapters coming soon!
 
 ---
