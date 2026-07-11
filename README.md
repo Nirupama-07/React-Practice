@@ -9,15 +9,14 @@ This repository contains all the chapters and projects I build while learning Re
 | Chapter | Topic | Status |
 |---------|-------|--------|
 | 01 | React Setup (Vite) | ✅ Completed |
-| 02 | JSX | ⏳ Coming Soon |
-| 03 | Components | ⏳ Coming Soon |
-| 04 | Props | ⏳ Coming Soon |
-| 05 | useState Hook | ⏳ Coming Soon |
-| 06 | Event Handling | ⏳ Coming Soon |
-| 07 | Conditional Rendering | ⏳ Coming Soon |
-| 08 | Lists & Keys | ⏳ Coming Soon |
-| 09 | Forms | ⏳ Coming Soon |
-| 10 | React Router | ⏳ Coming Soon |
+| 02 | Components | ✅ Completed |
+| 03 | Props | ⏳ Coming Soon |
+| 04 | useState Hook | ⏳ Coming Soon |
+| 05 | Event Handling | ⏳ Coming Soon |
+| 06 | Conditional Rendering | ⏳ Coming Soon |
+| 07 | Lists & Keys | ⏳ Coming Soon |
+| 08 | Forms | ⏳ Coming Soon |
+| 19 | React Router | ⏳ Coming Soon |
 
 ---
 
@@ -27,9 +26,9 @@ This repository contains all the chapters and projects I build while learning Re
 React-Course/
 │
 ├── README.md
-├── Chapter-01-React-Setup/
-├── Chapter-02-JSX/
-├── Chapter-03-Components/
+├── Chapter-01-Introduction to React/
+├── Chapter-02-Components/
+├── Chapter-03-Props/
 └── ...
 ```
 
@@ -56,6 +55,7 @@ The goal of this repository is to document my React learning journey by completi
 ## 📌 Progress
 
 - ✅ Chapter 01 completed
+- ✅ Chapter 02 completed
 - 🚀 More chapters coming soon!
 
 ---
