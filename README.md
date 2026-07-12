@@ -31,6 +31,8 @@ React-Course/
 ├── Chapter-01-Introduction to React/
 ├── Chapter-02-Components/
 ├── Chapter-03-Props/
+├── Practice-till-props/
+├── Doctor-Directory(Small-project)
 └── ...
 ```
 
