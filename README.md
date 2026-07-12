@@ -11,6 +11,8 @@ This repository contains all the chapters and projects I build while learning Re
 | 01 | React Setup (Vite) | ✅ Completed |
 | 02 | Components | ✅ Completed |
 | 03 | Props | ✅ Completed |
+| P.1| Practice upto Props | ✅ Completed |
+| Project.1| A small Project | ✅ Completed |
 | 04 | useState Hook | ⏳ Coming Soon |
 | 05 | Event Handling | ⏳ Coming Soon |
 | 06 | Conditional Rendering | ⏳ Coming Soon |
@@ -57,6 +59,9 @@ The goal of this repository is to document my React learning journey by completi
 - ✅ Chapter 01 completed
 - ✅ Chapter 02 completed
 - ✅ Chapter 03 completed
+- ✅ Some Questions based on Props,Components & JSX
+- ✅ Doctor-Directory(Small Project)
+    Tech-stacks:-HTML,CSS,BOOTSTRAP,REACT(JSX,Props,Components)
 - 🚀 More chapters coming soon!
 
 ---
