@@ -52,6 +52,7 @@
 
 body {
   margin: 0;
+  background-color: #fff8f2;
 }
 
 
@@ -99,13 +100,215 @@ code {
   background: var(--code-bg);
 }
 
-.carousel-item img{
-  height: 80vh;
+/* Navbar */
+
+.custom-navbar{
+    background: linear-gradient(90deg,#0f172a,#1e293b);
+    padding: 15px 0;
 }
-.product-cards{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+
+.navbar-brand{
+    color:#fff !important;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin:0 12px;
+    font-weight:500;
+    position:relative;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* Underline Animation */
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:#ffc107;
+    transition:.3s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* Login Button */
+
+.btn-warning{
+    border-radius:25px;
+    padding:8px 22px;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    transform:scale(1.05);
+    transition:.3s;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+    .navbar-nav{
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .nav-link{
+        margin:10px 0;
+    }
+
+    .btn-warning{
+        margin-top:15px;
+    }
+
+}
+
+
+/* Carousel Image */
+
+.image{
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+/* Caption */
+
+.carousel-caption{
+    bottom: 25%;
+}
+
+.carousel-caption h1{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(228, 217, 217, 0.8);
+}
+
+.carousel-caption p{
+    font-size: 1.3rem;
+    margin: 20px auto;
+    width: 60%;
+    line-height: 1.8;
+    text-shadow: 2px 2px 8px rgba(69, 64, 64, 0.8);
+}
+
+.carousel-caption .btn{
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Navigation Buttons */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,.4);
+    padding: 22px;
+    border-radius: 50%;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .image{
+        height: 70vh;
+    }
+
+    .carousel-caption{
+        bottom: 18%;
+    }
+
+    .carousel-caption h1{
+        font-size: 2rem;
+    }
+
+    .carousel-caption p{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .carousel-caption .btn{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+
+/* Parent Container */
+
+.products-container{
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+
+.category-card{
+    width: 280px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+/* Image */
+
+.category-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Body */
+
+.category-card .card-body{
+    padding: 20px;
+}
+
+.category-card .card-text{
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .products-container{
+        width:95%;
+    }
+
+    .category-card{
+        width:100%;
+        max-width:350px;
+    }
+
 }
 .card img{
   height: 300px;
@@ -113,6 +316,63 @@ code {
 h1{
   text-align: center;
 }
+.heading{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.todayDeals{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.today{
+    width: 320px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+.today:hover{
+    transform: translateY(-8px);
+}
+
 .today img{
-  height: 390px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.2),
+        transparent
+    );
+    color: white;
+}
+
+.card-img-overlay h5{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-img-overlay h6{
+    color: #ffd700;
+}
+
+.card-img-overlay p{
+    font-size: 14px;
 }

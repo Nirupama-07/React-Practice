@@ -3,12 +3,14 @@ import React from 'react'
 const Product_card = (props) => {
   return (
     <div>
-      <div className="card today text-bg-dark">
-        <img src={props.todayImage} className="card-img" alt="..."/>
+      <div className="card today">
+        <img src={props.todayImage} className="card-img" alt={props.todayTitle} />
+
         <div className="card-img-overlay">
-          <h5 className="card-title">{props.todayTitle}</h5>
-          <p className="card-text">{props.todayDescription}</p>
-          <p className="card-text"><small>{props.todayTimer}</small></p>
+          <h5>{props.todayTitle}</h5>
+          <h6>{props.todayBrand}</h6>
+          <p>{props.todayDescription}</p>
+          <h5>{props.todayPrice}</h5>
         </div>
       </div>
     </div>
