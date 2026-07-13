@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(33, 3, 60, 0.375);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: l; */
+    gap: 30px;
+    margin-left: 50px;
+}
+.details h2{
+    font-size: 50px;
+    text-shadow: 0 0 12px plum;
+}
+.name{
+    color: rgb(135, 56, 189);
+    text-shadow: 0 0 12px orange;
+}
+.details p{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.782);
+}
+.btn{
+    width: 170px;
+    padding: 10px 4px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: rgba(128, 0, 128, 0.622);
+}
+.btn:hover{
+    box-shadow: 0 0 12px orangered;
+    transform: translateY(-4px);
+}
+.image img{
+    height: 550px;
+}
