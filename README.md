@@ -12,9 +12,10 @@ This repository contains all the chapters and projects I build while learning Re
 | 02 | Components | ✅ Completed |
 | 03 | Props | ✅ Completed |
 | P.1| Practice upto Props | ✅ Completed |
-| Project.1| A small Project | ✅ Completed |
-| 04 | useState Hook | ⏳ Coming Soon |
-| 05 | Event Handling | ⏳ Coming Soon |
+| Project.1| Doctor-Directory(Mini Project) | ✅ Completed |
+| Project.2| E-Commerce(Mini Project) | ✅ Completed |
+| 04 | Styling with CSS | ✅ Completed |
+| 05 | Styling with Tailwind | ✅ Completed |
 | 06 | Conditional Rendering | ⏳ Coming Soon |
 | 07 | Lists & Keys | ⏳ Coming Soon |
 | 08 | Forms | ⏳ Coming Soon |
@@ -33,6 +34,9 @@ React-Course/
 ├── Chapter-03-Props/
 ├── Practice-till-props/
 ├── Doctor-Directory(Small-project)
+└── E-Commerce
+└── Chapter-04-Styling with CSS/
+└── Chapter-05-Styling with Tailwind/
 └── ...
 ```
 
@@ -47,6 +51,8 @@ React-Course/
 - CSS3
 - Git
 - GitHub
+- Bootstrap(v-5)
+- Tailwind(V-4.3)
 
 ---
 
@@ -64,6 +70,10 @@ The goal of this repository is to document my React learning journey by completi
 - ✅ Some Questions based on Props,Components & JSX
 - ✅ Doctor-Directory(Small Project)
     Tech-stacks:-HTML,CSS,BOOTSTRAP,REACT(JSX,Props,Components)
+- ✅ E-Commerce(Small Project)
+    Tech-stacks:-HTML,CSS,BOOTSTRAP,REACT(JSX,Props,Components)
+- ✅ Chapter 04 completed
+- ✅ Chapter 05 completed
 - 🚀 More chapters coming soon!
 
 ---
