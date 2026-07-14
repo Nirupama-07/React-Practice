@@ -16,7 +16,7 @@ This repository contains all the chapters and projects I build while learning Re
 | Project.2| E-Commerce(Mini Project) | ✅ Completed |
 | 04 | Styling with CSS | ✅ Completed |
 | 05 | Styling with Tailwind | ✅ Completed |
-| 06 | Conditional Rendering | ⏳ Coming Soon |
+| 06 | Function Call | ✅ Completed |
 | 07 | Lists & Keys | ⏳ Coming Soon |
 | 08 | Forms | ⏳ Coming Soon |
 | 19 | React Router | ⏳ Coming Soon |
@@ -37,6 +37,7 @@ React-Course/
 └── E-Commerce
 └── Chapter-04-Styling with CSS/
 └── Chapter-05-Styling with Tailwind/
+└── Chapter-06-Function Call/
 └── ...
 ```
 
@@ -74,6 +75,7 @@ The goal of this repository is to document my React learning journey by completi
     Tech-stacks:-HTML,CSS,BOOTSTRAP,REACT(JSX,Props,Components)
 - ✅ Chapter 04 completed
 - ✅ Chapter 05 completed
+- ✅ Chapter 06 completed
 - 🚀 More chapters coming soon!
 
 ---

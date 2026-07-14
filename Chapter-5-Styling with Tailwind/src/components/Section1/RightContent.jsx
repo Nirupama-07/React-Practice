@@ -10,7 +10,7 @@ const RightContent = (props) => {
           key={item.id}
           src={item.image}
           alt=""
-          className="w-70 h-80 object-cover rounded-3xl shrink-0"
+          className="w-70 h-80 object-cover rounded-3xl shrink-0 transition-transform hover:-translate-y-2.5"
         />
       ))}
       </div>
