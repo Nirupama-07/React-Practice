@@ -6,11 +6,11 @@ const RightContent = (props) => {
     <div className="absolute inset-0"></div>
       <div className='relative z-10 flex gap-6 overflow-x-auto px-6 [&::-webkit-scrollbar]:hidden hide-scrollbar'>
         {props.displayImage.map((item) => (
-        <img
+          <img
           key={item.id}
           src={item.image}
           alt=""
-          className="w-70 h-80 object-cover rounded-3xl shrink-0 transition-transform hover:-translate-y-2.5"
+          className="w-80 h-80 object-cover rounded-3xl shrink-0 transition-transform hover:-translate-y-2.5"
         />
       ))}
       </div>
