@@ -17,8 +17,9 @@ This repository contains all the chapters and projects I build while learning Re
 | 04 | Styling with CSS | ✅ Completed |
 | 05 | Styling with Tailwind | ✅ Completed |
 | 06 | Function Call | ✅ Completed |
-| 07 | Lists & Keys | ⏳ Coming Soon |
-| 08 | Forms | ⏳ Coming Soon |
+| 07 | useState(Basics) | ✅ Completed |
+| 08 | Lists & Keys | ⏳ Coming Soon |
+| 09 | Forms | ⏳ Coming Soon |
 | 19 | Major Project | ⏳ Pending |
 
 ---
@@ -38,7 +39,7 @@ React-Course/
 └── Chapter-04-Styling with CSS/
 └── Chapter-05-Styling with Tailwind/
 └── Chapter-06-Function Call/
-└── ...
+└── Chapter-07-useState(Basics)/
 └── ...
 └── Travel-Plan(Major-Project)
 ```
@@ -78,6 +79,7 @@ The goal of this repository is to document my React learning journey by completi
 - ✅ Chapter 04 completed
 - ✅ Chapter 05 completed
 - ✅ Chapter 06 completed
+- ✅ Chapter 07 completed
 - 🚀 More chapters coming soon!
 - ⏳ Major Project
 ---
