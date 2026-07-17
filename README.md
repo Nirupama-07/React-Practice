@@ -18,6 +18,12 @@ This repository contains all the chapters and projects I build while learning Re
 | 05 | Styling with Tailwind | ✅ Completed |
 | 06 | Function Call | ✅ Completed |
 | 07 | useState(Basics) | ✅ Completed |
+| P.2 | Practice useState | ⏳ Pending |
+    └──| 1. | Color Changer using usestate | ✅ Completed |
+    └──| 2. | Counter Challenge | ✅ Completed |
+    └──| 3. | Live Character Counter | ✅ Completed |
+    └──| 4. | Password Checker | ✅ Completed |
+    └──| 5. | Image Switcher | ✅ Completed |
 | 08 | Lists & Keys | ⏳ Coming Soon |
 | 09 | Forms | ⏳ Coming Soon |
 | 19 | Major Project | ⏳ Pending |
@@ -40,6 +46,7 @@ React-Course/
 └── Chapter-05-Styling with Tailwind/
 └── Chapter-06-Function Call/
 └── Chapter-07-useState(Basics)/
+└── Practice useState/
 └── ...
 └── Travel-Plan(Major-Project)
 ```
@@ -80,6 +87,7 @@ The goal of this repository is to document my React learning journey by completi
 - ✅ Chapter 05 completed
 - ✅ Chapter 06 completed
 - ✅ Chapter 07 completed
+- ⏳ Some questions related to usestate
 - 🚀 More chapters coming soon!
 - ⏳ Major Project
 ---

@@ -1,0 +1,22 @@
+.card img{
+  width: 100%;
+  margin-right: 10px;
+  height:80vh;
+  border-radius: 15px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+.btn button{
+  margin-top: 30px;
+  background-color: blue;
+  color: white;
+  padding: 17px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
