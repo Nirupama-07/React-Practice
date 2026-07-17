@@ -51,6 +51,7 @@ const App = () => {
     errorMessage = "Strong Password";
     color = "text-green-600";
   }
+  
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white shadow-xl rounded-xl w-full max-w-md p-8">
