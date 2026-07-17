@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Home from './components/Section1/Home'
 import Deals from './components/Section2/Deals'
+import Destination from './components/Section3/Destination'
 
 const App = () => {
 
@@ -50,10 +51,51 @@ const App = () => {
       location:"Spain"
     }
   ]
+
+  const destinationDetails=[
+    {
+      id:1,
+      image:"https://thumbs.dreamstime.com/b/qutub-minar-tower-new-delhi-india-40493436.jpg",
+      title:"Qutub Minar",
+      location:"Delhi,India"
+    },
+    {
+      id:2,
+      image:"https://i.pinimg.com/originals/66/c8/d1/66c8d1696fbf9a849db9162981e72726.jpg",
+      title:"Senso-ji Temple",
+      location:"Japan"
+    },
+    {
+      id:3,
+      image:"https://www.londonmalanders.com/wp-content/uploads/2020/02/The-Monument-London-1.jpg",
+      title:"Monument of Great Fire",
+      location:"London"
+    },
+    
+    {
+      id:4,
+      image:"https://images6.alphacoders.com/521/521630.jpg",
+      title:"Bali",
+      location:"Bali,Indonesia"
+    },
+    {
+      id:5,
+      image:"https://ychef.files.bbci.co.uk/976x549/p0gp95cq.jpg",
+      title:"Sydney Opera House",
+      location:"Australia"
+    },
+    {
+      id:6,
+      image:"https://www.ourescapeclause.com/wp-content/uploads/2022/11/shutterstock_1464930743-scaled.jpg",
+      title:"Gimmeworld",
+      location:"Switzerland"
+    }
+  ]
   return (
     <div>
       <Home heroImage={heroImage} displayImage={display} setHeroImage={setHeroImage}/>
       <Deals cardsImages={cardsData}/>
+      <Destination destinationCardsImages={destinationDetails}/>
     </div>
   )
 }
