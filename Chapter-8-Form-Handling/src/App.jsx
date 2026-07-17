@@ -5,6 +5,7 @@ const App = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
   const [gender, setGender] = useState('')
   const [experience, setExperience] = useState('')
   const [message, setMessage] = useState('')
@@ -19,6 +20,36 @@ const App = () => {
     console.log('Gender:', gender)
     console.log('Experience:', experience)
     console.log('Message:', message)
+  }
+
+  let errorMessage = "";
+  let color = "";
+
+  const hasUppercase = /[A-Z]/.test(password);
+  const hasLowercase = /[a-z]/.test(password);
+  const hasNumber = /[0-9]/.test(password);
+  const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+  if (password.length === 0) {
+    errorMessage = "";
+  } else if (password.length < 8) {
+    errorMessage = "Password must be at least 8 characters";
+    color = "text-red-600";
+  } else if (!hasUppercase) {
+    errorMessage = "Add at least one uppercase letter";
+    color = "text-red-600";
+  } else if (!hasLowercase) {
+    errorMessage = "Add at least one lowercase letter";
+    color = "text-red-600";
+  } else if (!hasNumber) {
+    errorMessage = "Add at least one number";
+    color = "text-red-600";
+  } else if (!hasSpecial) {
+    errorMessage = "Add at least one special character";
+    color = "text-red-600";
+  } else {
+    errorMessage = "Strong Password";
+    color = "text-green-600";
   }
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
@@ -55,7 +86,21 @@ const App = () => {
             onChange={(e) => setPassword(e.target.value)}
             className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-
+          <p className={color}>{errorMessage}</p>
+          <input
+            type="password"
+            value={confirmPassword}
+            placeholder='Enter password again'
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          {confirmPassword !== "" && (
+            <p className={password === confirmPassword ? "text-green-600" : "text-red-600"}>
+              {password === confirmPassword
+                ? "✅ Passwords match"
+                : "❌ Passwords do not match"}
+            </p>
+          )}
           <div>
             <p className="font-semibold mb-2">Gender</p>
 
