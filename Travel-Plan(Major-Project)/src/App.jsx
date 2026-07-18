@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Home from './components/Section1/Home'
 import Deals from './components/Section2/Deals'
 import Destination from './components/Section3/Destination'
+import Responsibilities from './components/Section-4/Responsibilities'
 
 const App = () => {
 
@@ -42,7 +43,7 @@ const App = () => {
       id:3,
       image:"https://i.pinimg.com/originals/13/c1/4e/13c14efb8e56a8a87c324ba282dad8ad.jpg",
       title:"Bali Tower",
-      location:"Bali"
+      location:"Indonesia"
     },
     {
       id:4,
@@ -91,11 +92,31 @@ const App = () => {
       location:"Switzerland"
     }
   ]
+
+  const response=[
+    {
+      id:1,
+      description:"Always available for your trip"
+    },
+    {
+      id:2,
+      description:"Cancel Free Charge with FREE TARIF"
+    },
+    {
+      id:3,
+      description:"Train to Flight Ticket"
+    },
+    {
+      id:4,
+      description:"Best services throughout your journey"
+    }
+  ]
   return (
     <div>
       <Home heroImage={heroImage} displayImage={display} setHeroImage={setHeroImage}/>
       <Deals cardsImages={cardsData}/>
       <Destination destinationCardsImages={destinationDetails}/>
+      <Responsibilities responsibility={response}/>
     </div>
   )
 }
