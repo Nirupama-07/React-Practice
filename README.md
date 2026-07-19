@@ -24,8 +24,9 @@ This repository contains all the chapters and projects I build while learning Re
     └──| 3. | Live Character Counter | ✅ Completed |
     └──| 4. | Password Checker | ✅ Completed |
     └──| 5. | Image Switcher | ✅ Completed |
-| 08 | Lists & Keys | ⏳ Coming Soon |
-| 09 | Forms | ⏳ Coming Soon |
+| 08 | Form-Handling | ✅ Completed  |
+| 09 | Two Way Binding | ✅ Completed  |
+| 10 | LocalStorage | ✅ Completed  |
 | 19 | Major Project | ⏳ Pending |
 
 ---
@@ -47,6 +48,9 @@ React-Course/
 └── Chapter-06-Function Call/
 └── Chapter-07-useState(Basics)/
 └── Practice useState/
+└── Chapter-08-Form-Handling/
+└── Chapter-09-Two Way Binding/
+└── Chapter-10-LocalStorage/
 └── ...
 └── Travel-Plan(Major-Project)
 ```
@@ -87,6 +91,9 @@ The goal of this repository is to document my React learning journey by completi
 - ✅ Chapter 05 completed
 - ✅ Chapter 06 completed
 - ✅ Chapter 07 completed
+- ✅ Chapter 08 completed
+- ✅ Chapter 09 completed
+- ✅ Chapter 10 completed
 - ⏳ Some questions related to usestate
 - 🚀 More chapters coming soon!
 - ⏳ Major Project
