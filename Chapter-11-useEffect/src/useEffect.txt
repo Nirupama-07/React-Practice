@@ -1,0 +1,178 @@
+let[count,setCount]=useState(0)
+
+  function increase(){
+    setCount(count+=1)
+  }
+
+  function decrease(){
+    setCount(count-=1)
+  }
+
+  //1st case
+  // useEffect(()=>{
+  //   console.log("React renders")
+  // })
+
+  //2nd case- empty dependency
+  // useEffect(()=>{
+  //   console.log("React Renders")
+  // },[])
+  //best for api calls,local storage,initial setup
+  //An empty dependency array means:"Run this effect only once after the component mounts (the first render)."
+
+
+
+  //3rd case-dependency array
+  useEffect(()=>{
+    console.log("React Renders")
+  },[count])
+  //jou tare effext laga heichi seita hi change hobo au alga state guda change hoboni
+
+
+ // Multiple dependencies
+ useEffect(() => {
+   console.log("Count or Name changed");
+ }, [count, name]);
+Runs when either count or name changes.
+
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
+      
+    </div>
+  )
+
+------------------------------------------------------------------------------------------------------
+
+        State changes
+            ↓
+    Component Re-renders
+            ↓
+    React checks dependency array
+            ↓
+    Should the effect run?
+
+So:Rendering and running an effect are related, but they are not the same thing.This is why it's called useEffect—it runs after React has applied the render.
+
+e.g.
+const [count, setCount] = useState(0);
+const [name, setName] = useState("");
+
+useEffect(() => {
+  console.log("Effect");
+}, [count]);
+Question:
+
+If you type in the name input:
+
+Will the component re-render?
+Answer:✅ The component will re-render because name state changed.
+
+Will useEffect run?
+Answer:❌ useEffect will not run because count didn't change.
+
+---------------------------------------------------------------------------------------------------------------
+
+What is a Cleanup Function?
+
+A cleanup function is a function that React calls before an effect runs again or when the component is removed (unmounted).
+
+The syntax is:
+
+useEffect(() => {
+  console.log("Effect Started");
+
+  return () => {
+    console.log("Cleanup");
+  };
+}, []);
+
+Notice the return.
+
+That returned function is called the cleanup function.
+
+Why do we need cleanup?
+
+Imagine you have a timer.
+
+setInterval(() => {
+  console.log("Hello");
+}, 1000);
+
+This prints:
+
+Hello
+Hello
+Hello
+Hello
+...
+
+every second.
+
+Now imagine your component disappears from the screen.
+
+Should the timer keep running?
+
+❌ No.
+
+If it keeps running:
+
+CPU is wasted.
+Memory is wasted.
+Bugs can happen.
+
+So before React removes the component, it says:
+
+"Clean up whatever you started."
+
+That's exactly what the cleanup function is for.
+
+Timeline
+count = 0
+
+↓
+
+Effect Started
+
+↓
+
+Click Button
+
+↓
+
+Cleanup
+
+↓
+
+Effect Started
+
+↓
+
+Click Again
+
+↓
+
+Cleanup
+
+↓
+
+Effect Started
+
+(The Golden Rule of useEffect)
+
+Keep this in mind:
+
+State changes
+      ↓
+Component re-renders
+      ↓
+React updates the DOM
+      ↓
+Cleanup previous effect (if needed)(When the component unmounts, React only runs the cleanup. There is no new effect, because the component is gone.)
+      ↓
+Run the new effect
+
+That's the lifecycle whenever an effect with dependencies runs again.
