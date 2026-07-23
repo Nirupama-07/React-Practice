@@ -4,7 +4,7 @@ const Home = () => {
     return (
 
         <div
-            className="h-screen bg-cover bg-center mx-16 rounded-2xl"
+            className="h-screen bg-cover bg-center mx-16 -mt-17 rounded-2xl"
             style={{
                 backgroundImage:
                     "url('https://thelodgeslancashire.co.uk/uploads/2024/12/discover-the-world-s-most-sustainable-and-beautiful-eco-friendly-cottage.webp')",
